@@ -4,8 +4,6 @@ channels:
 dependencies:
   - python=3.10
   - numpy
-  - torch
-  - librosa
   - scikit-learn
   - pandas
   - matplotlib
