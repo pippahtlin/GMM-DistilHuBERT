@@ -1,4 +1,8 @@
+# Ignore model checkpoints
 checkpoints/
 *.pt
 *.pth
 *.ckpt
+
+# Ignore data folder
+data/
