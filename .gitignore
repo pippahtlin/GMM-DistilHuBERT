@@ -1,8 +1,13 @@
 # Ignore model checkpoints
-checkpoints/
+checkpoints_distilhubert_asr/
 *.pt
 *.pth
 *.ckpt
+*.bin
+*.log
+wandb/
+__pycache__/
+*.ipynb_checkpoints
 
 # Ignore data folder
 data/
