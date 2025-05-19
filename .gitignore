@@ -6,3 +6,4 @@ checkpoints/
 
 # Ignore data folder
 data/
+processed_dataset/
