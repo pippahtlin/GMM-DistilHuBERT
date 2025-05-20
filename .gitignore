@@ -12,3 +12,6 @@ __pycache__/
 # Ignore data folder
 data/
 processed_dataset/
+
+# FL
+FL_script/FedAvg_checkpoints/
