@@ -18,5 +18,4 @@ FL_script/FedAvg_checkpoints/
 FL_script/DP_FedAvg_checkpoints
 
 # script
-script/
-wandb/
+script/wandb/
