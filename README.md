@@ -2,11 +2,11 @@
 
 This repository contains the code and experiments for **SoftHuBERT**, a project exploring the replacement of K-means clustering with **Gaussian Mixture Models (GMM)** in the pretraining pipeline of **Uncertainty-Aware HuBERT**. The goal is to leverage soft, probabilistic cluster assignments to better model uncertainty in speech representations and improve downstream **automatic speech recognition (ASR)** performance.
 
-## 🧠 Motivation
+## Motivation
 
 HuBERT uses K-means clustering to generate discrete targets for masked prediction during self-supervised pretraining. However, K-means provides hard labels and does not capture uncertainty in feature representations. This project proposes replacing K-means with **GMM-based soft labels** and evaluates the effect on fine-tuning performance for ASR tasks.
 
-## 🔁 Pipeline Overview
+## Pipeline Overview
 
 1. **Baseline Pretraining (Optional):**  
    Pretrain DistilHuBERT using standard K-means targets to establish a baseline.
@@ -41,7 +41,7 @@ soft-hubert/
 └── README.md
 ```
 
-## 📦 Dependencies
+## Dependencies
 
 - PyTorch
 - torchaudio
@@ -53,7 +53,7 @@ soft-hubert/
 pip install -r requirements.txt
 ```
 
-## 📊 Dataset
+## Dataset
 
 - **LibriSpeech** (train-clean-100 for GMM, train-960 for ASR fine-tuning)  
   Automatically downloaded using `torchaudio.datasets.LIBRISPEECH`.
@@ -65,7 +65,7 @@ pip install -r requirements.txt
 | Baseline HuBERT  | K-means (hard)     | ...                   | ...                  |
 | Uncertainty-Aware HuBERT       | GMM (soft)         | ...                   | ...                  |
 
-## 📜 Citation
+## Citation
 
 If you use this project or codebase, please cite it as:
 
@@ -78,7 +78,7 @@ If you use this project or codebase, please cite it as:
 }
 ```
 
-## 🧩 Acknowledgments
+## Acknowledgments
 
 This project builds on prior work from:
 - [HuBERT (Hsu et al., 2021)](https://arxiv.org/abs/2106.07447)
