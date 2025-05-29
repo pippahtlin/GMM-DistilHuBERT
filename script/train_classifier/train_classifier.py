@@ -6,3 +6,8 @@ def extract_all_layer_features(model, waveform, layers=[0, 1, 2]):
         hidden_states = outputs.hidden_states  # tuple: [0]=embedding, [1]=layer1, etc.
         selected = [hidden_states[i] for i in layers]
         return torch.cat(selected, dim=-1)  # [1, T, D_total]
+
+def extract_single_layer_feature(model, waveform, layer):
+    with torch.no_grad():
+        outputs = model(waveform, output_hidden_states=True)
+        return outputs.hidden_states[layer]  # [1, T, D]
