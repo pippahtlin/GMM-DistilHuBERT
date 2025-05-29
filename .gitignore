@@ -3,7 +3,9 @@
 *.ckpt
 *.bin
 *.log
-*.pkl   
+*.pkl
+*.npy
+*.pkl
 wandb/
 __pycache__/
 *.ipynb_checkpoints
@@ -21,3 +23,6 @@ FL_script/DP_FedAvg_checkpoints
 
 # script
 script/wandb/
+script/pretrain_DHuBERT/data/
+script/train_classifier/save_pathgmm_checkpoints/
+script/train_classifier/GMM_DHuBERT_pretrain/gmm_pretrained_distilhubert/
